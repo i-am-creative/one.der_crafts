@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_one.der_crafts_ | Handcrafted With Love</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Custom frames, albums, bouquets & more — each piece handcrafted with care by _one.der_crafts_. Order via WhatsApp.">
+    <meta name="keywords" content="handcrafted frames, custom albums, photo frames, polaroid prints, gift bouquets, kinder joy bouquet, mini hampers, caricature trophies, custom magazines, nikkah nama, one.der crafts, handmade gifts India, custom t-shirt, custom mug, custom keychain, name board, resin coasters, photo calendar, scrapbook, personalized gifts">
+    <meta name="author" content="_one.der_crafts_">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://one.der-crafts.com/">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="_one.der_crafts_ | Handcrafted With Love">
+    <meta property="og:description" content="Custom frames, albums, bouquets & more — each piece handcrafted with care. Order via WhatsApp.">
+    <meta property="og:url" content="https://one.der-crafts.com/">
+    <meta property="og:site_name" content="_one.der_crafts_">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image" content="https://one.der-crafts.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="_one.der_crafts_ — Handcrafted frames, albums, bouquets & more">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="_one.der_crafts_ | Handcrafted With Love">
+    <meta name="twitter:description" content="Custom frames, albums, bouquets & more — each piece handcrafted with care.">
+    <meta name="twitter:image" content="https://one.der-crafts.com/og-image.png">
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        cream: '#FFFDF7',
+                        sand: '#F5F0E8',
+                        warmgray: '#E8E4DE',
+                        charcoal: '#2D2D2D',
+                        blush: '#F9E4E4',
+                        sage: '#E8EDE8',
+                        lavender: '#EDE8F5',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #FFFDF7; }
+
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 24px 48px -12px rgba(0,0,0,0.08), 0 8px 16px -4px rgba(0,0,0,0.04);
+        }
+        .product-card:hover .card-img { transform: scale(1.05); }
+
+        .card-img { transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+
+        .fade-up {
+            animation: fadeUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            opacity: 0;
+        }
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, #FFFDF7 0%, #F9E4E4 30%, #EDE8F5 60%, #E8EDE8 85%, #FFFDF7 100%);
+        }
+        .hero-glow {
+            background: radial-gradient(ellipse 50% 80% at 50% 40%, rgba(249,228,228,0.5) 0%, rgba(237,232,245,0.3) 40%, transparent 70%);
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d4cfc7; border-radius: 3px; }
+
+        .filter-pill {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        .filter-pill:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+        .filter-pill.active {
+            background: linear-gradient(135deg, #2D2D2D 0%, #3d3d3d 100%);
+            color: #FFFDF7;
+            border-color: #2D2D2D;
+            box-shadow: 0 4px 14px rgba(45,45,45,0.2);
+        }
+
+        .price-tag-dark {
+            background: linear-gradient(135deg, #2D2D2D, #555);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .wa-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            transition: all 0.3s ease;
+        }
+        .wa-btn:hover {
+            background: linear-gradient(135deg, #20BD5A 0%, #0E7A6E 100%);
+            transform: scale(1.03);
+            box-shadow: 0 4px 14px rgba(37,211,102,0.3);
+        }
+
+        .wa-fab {
+            box-shadow: 0 6px 20px rgba(37,211,102,0.35);
+            transition: all 0.3s ease;
+        }
+        .wa-fab:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 28px rgba(37,211,102,0.45);
+        }
+        .lang-toggle-btn {
+            transition: all 0.2s ease;
+        }
+        .lang-toggle-btn.active {
+            background: rgba(255,255,255,0.3);
+            font-weight: 600;
+        }
+
+        .add-btn {
+            background: linear-gradient(135deg, #2D2D2D 0%, #444 100%);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="text-charcoal antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-cream/70 backdrop-blur-xl z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-18 py-4">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blush via-lavender to-sage flex items-center justify-center font-serif text-lg font-bold text-charcoal group-hover:scale-105 transition-transform">o</div>
+                    <div>
+                        <span class="font-serif text-xl md:text-2xl font-bold tracking-tight block leading-none">_one.der_crafts_</span>
+                        <span class="text-[0.6rem] tracking-[0.25em] uppercase text-charcoal/30 block">Handcrafted with love</span>
+                    </div>
+                </a>
+                <!-- Navigation -->
+                <div class="flex items-center gap-6 text-sm font-medium text-charcoal/50">
+                    <a href="#" class="text-charcoal font-semibold">Shop</a>
+                    <a href="about.html" class="hover:text-charcoal/80 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-charcoal/80 transition-colors">Contact</a>
+                    <a href="https://wa.me/919123456789?text=Hi!%20I'm%20interested%20in%20your%20products." target="_blank" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-colors text-xs font-medium text-[#128C7E]">
+                        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-gradient relative overflow-hidden">
+        <div class="hero-glow absolute inset-0 pointer-events-none"></div>
+        <div class="relative pt-36 pb-20 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="fade-up" style="animation-delay: 0.1s">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/60 backdrop-blur-sm border border-warmgray/30 text-xs tracking-widest uppercase text-charcoal/50 mb-8">
+                        <span class="w-1.5 h-1.5 rounded-full bg-rose-300"></span>
+                        Handcrafted memories
+                    </span>
+                </div>
+                <h1 class="fade-up font-serif text-5xl sm:text-6xl md:text-8xl font-bold leading-[0.95] mb-8" style="animation-delay: 0.2s">
+                    Where <em class="italic bg-gradient-to-r from-rose-300 via-violet-300 to-emerald-300 bg-clip-text text-transparent">wonder</em><br>meets craft
+                </h1>
+                <p class="fade-up text-base md:text-lg text-charcoal/40 max-w-lg mx-auto leading-relaxed mb-10" style="animation-delay: 0.35s">
+                    Custom frames, albums, bouquets & more — each piece made with care, just for you.
+                </p>
+                <div class="fade-up flex flex-col sm:flex-row items-center justify-center gap-4" style="animation-delay: 0.5s">
+                    <a href="#products" class="px-8 py-3.5 bg-charcoal text-cream rounded-2xl font-medium hover:bg-charcoal/90 transition-colors text-sm">Browse Collection</a>
+                    <a href="https://wa.me/919123456789?text=Hi!%20I'm%20interested%20in%20your%20products." target="_blank" class="wa-btn px-8 py-3.5 text-white rounded-2xl font-medium text-sm flex items-center gap-2">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Chat With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="relative h-16">
+            <svg viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 w-full">
+                <path d="M0 64L1440 64L1440 0C1440 0 1080 56 720 56C360 56 0 0 0 0L0 64Z" fill="#FFFDF7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+    <section id="products" class="px-6 pt-8 pb-6">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-2.5" id="categoryFilters">
+            <button onclick="filterCategory('all')" class="filter-pill active px-5 py-2.5 rounded-full text-sm font-medium border border-warmgray/40 bg-white/80 backdrop-blur-sm" data-cat="all">All</button>
+            <button onclick="filterCategory('frames')" class="filter-pill px-5 py-2.5 rounded-full text-sm font-medium border border-warmgray/40 bg-white/80 backdrop-blur-sm" data-cat="frames">Frames</button>
+            <button onclick="filterCategory('albums')" class="filter-pill px-5 py-2.5 rounded-full text-sm font-medium border border-warmgray/40 bg-white/80 backdrop-blur-sm" data-cat="albums">Albums & Photos</button>
+            <button onclick="filterCategory('bouquets')" class="filter-pill px-5 py-2.5 rounded-full text-sm font-medium border border-warmgray/40 bg-white/80 backdrop-blur-sm" data-cat="bouquets">Bouquets & Hampers</button>
+            <button onclick="filterCategory('custom')" class="filter-pill px-5 py-2.5 rounded-full text-sm font-medium border border-warmgray/40 bg-white/80 backdrop-blur-sm" data-cat="custom">Custom Stationery</button>
+            <button onclick="filterCategory('gifts')" class="filter-pill px-4 py-2.5 rounded-full text-sm font-medium border border-warmgray/40 bg-white/80 backdrop-blur-sm" data-cat="gifts">Gifts</button>
+        </div>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section class="px-6 pb-24">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productGrid">
+        </div>
+    </section>
+
+    <!-- FLOATING WHATSAPP FAB -->
+    <div class="fixed bottom-8 right-8 z-40 flex flex-col items-end gap-2">
+        <!-- Language toggle -->
+        <div class="flex items-center gap-1 bg-white/90 backdrop-blur-sm rounded-xl px-2 py-1.5 shadow-md ring-1 ring-warmgray/20">
+            <button onclick="setLang('en')" class="lang-toggle-btn text-[0.65rem] text-charcoal/60 px-2 py-0.5 rounded-md" data-lang="en">EN</button>
+            <button onclick="setLang('hi')" class="lang-toggle-btn text-[0.65rem] text-charcoal/60 px-2 py-0.5 rounded-md" data-lang="hi">हि</button>
+            <button onclick="setLang('ar')" class="lang-toggle-btn text-[0.65rem] text-charcoal/60 px-2 py-0.5 rounded-md" data-lang="ar">ع</button>
+            <button onclick="setLang('ml')" class="lang-toggle-btn text-[0.65rem] text-charcoal/60 px-2 py-0.5 rounded-md" data-lang="ml">മ</button>
+        </div>
+        <!-- WhatsApp button -->
+        <a href="https://wa.me/919123456789?text=Hi!%20I'm%20interested%20in%20your%20products." target="_blank" class="wa-fab flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20BD5A] pl-4 pr-5 py-3.5 rounded-2xl shadow-lg">
+            <svg class="w-6 h-6 text-white shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span id="waLabel" class="text-white text-sm font-semibold whitespace-nowrap">Chat with us on WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-warmgray/30 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="font-serif text-2xl font-bold mb-1">_one.der_crafts_</p>
+                    <p class="text-sm text-charcoal/30">Handcrafted with love. All rights reserved.</p>
+                </div>
+                <div class="flex items-center gap-6 text-sm text-charcoal/30">
+                    <a href="index.html" class="hover:text-charcoal/60 transition-colors">Shop</a>
+                    <a href="about.html" class="hover:text-charcoal/60 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-charcoal/60 transition-colors">Contact</a>
+                    <a href="#" class="hover:text-charcoal/60 transition-colors">Frames</a>
+                    <a href="#" class="hover:text-charcoal/60 transition-colors">Albums</a>
+                    <a href="#" class="hover:text-charcoal/60 transition-colors">Bouquets</a>
+                    <a href="#" class="hover:text-charcoal/60 transition-colors">Custom</a>
+                    <a href="#" class="hover:text-charcoal/60 transition-colors">Gifts</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+const WA_NUMBER = '919123456789';
+
+const products = [
+    { id: 1,  name: 'A3 Frame',           price: 650,  category: 'frames',  icon: '🖼️', desc: 'Elegant A3-sized frame for your cherished moments' },
+    { id: 2,  name: 'A4 Frame',           price: 500,  category: 'frames',  icon: '🖼️', desc: 'Classic A4 frame, perfect for prints and photos', bestseller: true },
+    { id: 3,  name: 'A5 Frame',           price: 300,  category: 'frames',  icon: '🖼️', desc: 'Compact A5 frame for desk or shelf display' },
+    { id: 4,  name: '4x4 Frame',          price: 100,  category: 'frames',  icon: '🖼️', desc: 'Square 4" frame — mini but mighty' },
+    { id: 5,  name: '2x2 Frame',          price: 80,   category: 'frames',  icon: '🖼️', desc: 'Tiny 2" frame for the cutest snapshots' },
+    { id: 6,  name: 'Baby Frame',         price: 500,  category: 'frames',  icon: '👶', desc: 'Adorable frame designed for baby photos', bestseller: true },
+    { id: 7,  name: 'Ring Album — 12 Pics',   price: 99,   category: 'albums',  icon: '📔', desc: 'Compact ring album with 12 photo slots' },
+    { id: 8,  name: 'Ring Album — 24 Pics',   price: 190,  category: 'albums',  icon: '📔', desc: 'Ring album with 24 photo slots for more memories' },
+    { id: 9,  name: 'Polaroid Photos — 12',    price: 80,   category: 'albums',  icon: '📸', desc: '12 retro-style polaroid prints of your photos' },
+    { id: 10, name: 'Polaroid Photos — 24',    price: 140,  category: 'albums',  icon: '📸', desc: '24 retro-style polaroid prints for the full story' },
+    { id: 11, name: 'Gift Box',              price: 500,  category: 'bouquets', icon: '🎁', desc: 'Curated gift box starting from ₹500', priceFrom: true },
+    { id: 12, name: '3 Kinder Joy Bouquet',   price: 399,  category: 'bouquets', icon: '🍫', desc: 'Bouquet of 3 Kinder Joy chocolates', bestseller: true },
+    { id: 13, name: '5 Kinder Joy Bouquet',   price: 650,  category: 'bouquets', icon: '🍫', desc: 'Bouquet of 5 Kinder Joy chocolates' },
+    { id: 14, name: '10₹ Galaxy Bouquet',     price: 440,  category: 'bouquets', icon: '🌌', desc: '8-piece 10₹ chocolate galaxy bouquet' },
+    { id: 15, name: 'Bouquet',                price: 250,  category: 'bouquets', icon: '💐', desc: 'Beautiful bouquets starting from ₹250', priceFrom: true },
+    { id: 16, name: 'Mini Hamper',            price: 250,  category: 'bouquets', icon: '🧺', desc: 'Thoughtful mini hampers starting from ₹250', priceFrom: true },
+    { id: 17, name: 'Caricature Trophy',      price: 400,  category: 'bouquets', icon: '🏆', desc: 'Custom caricature trophy — per piece' },
+    { id: 18, name: 'Nikkah Nama',            price: 0,    category: 'custom',  icon: '📜', desc: 'Custom-designed Nikkah Nama — available on request', available: true },
+    { id: 19, name: 'A5 Magazine',            price: 450,  category: 'custom',  icon: '📘', desc: 'A5 size · 4 pages / 8 sides · Fully customizable', priceFrom: true },
+    { id: 20, name: 'A4 Magazine',            price: 650,  category: 'custom',  icon: '📗', desc: 'A4 size · Fully customizable · Premium quality', priceFrom: true },
+
+    // PERSONALIZED GIFTS
+    { id: 21, name: 'Name Board',           price: 599,  category: 'gifts',   icon: '🪧', desc: 'Custom name boards starting from ₹599', priceFrom: true },
+    { id: 22, name: 'Keychain',             price: 149,  category: 'gifts',   icon: '🔑', desc: 'Personalized keychains starting from ₹149', priceFrom: true },
+    { id: 23, name: 'Custom Pen',           price: 149,  category: 'gifts',   icon: '🖊️', desc: 'Engraved pens starting from ₹149', priceFrom: true },
+    { id: 24, name: 'Resin Coaster Set',    price: 399,  category: 'gifts',   icon: '🪨', desc: 'Handmade resin coaster sets starting from ₹399', priceFrom: true },
+    { id: 25, name: 'Custom T-Shirt',       price: 499,  category: 'gifts',   icon: '👕', desc: 'Printed t-shirts starting from ₹499', priceFrom: true },
+    { id: 26, name: 'Custom Mug',           price: 349,  category: 'gifts',   icon: '☕', desc: 'Personalized mugs starting from ₹349', priceFrom: true },
+    { id: 27, name: 'Custom Phone Case',    price: 299,  category: 'gifts',   icon: '📱', desc: 'Custom phone cases starting from ₹299', priceFrom: true },
+    { id: 28, name: 'Custom Bookmark',      price: 99,   category: 'gifts',   icon: '🔖', desc: 'Beautiful bookmarks starting from ₹99', priceFrom: true },
+    { id: 29, name: 'Photo Calendar',       price: 349,  category: 'gifts',   icon: '📅', desc: 'Custom photo calendars starting from ₹349', priceFrom: true },
+    { id: 30, name: 'Scrapbook',            price: 599,  category: 'gifts',   icon: '📓', desc: 'Handcrafted scrapbooks starting from ₹599', priceFrom: true },
+];
+
+const cardAccents = {
+    frames:   { gradient: 'from-rose-50/80 to-pink-50/80',     ring: 'ring-rose-100',   tag: 'bg-rose-50 text-rose-400' },
+    albums:   { gradient: 'from-violet-50/80 to-purple-50/80', ring: 'ring-violet-100', tag: 'bg-violet-50 text-violet-400' },
+    bouquets: { gradient: 'from-emerald-50/80 to-green-50/80', ring: 'ring-emerald-100', tag: 'bg-emerald-50 text-emerald-400' },
+    custom:   { gradient: 'from-amber-50/80 to-yellow-50/80', ring: 'ring-amber-100',  tag: 'bg-amber-50 text-amber-400' },
+    gifts:    { gradient: 'from-sky-50/80 to-blue-50/80',      ring: 'ring-sky-100',    tag: 'bg-sky-50 text-sky-400' },
+};
+
+function waLink(product) {
+    const price = product.available ? '' : ` (${product.priceFrom ? 'from ' : '₹'}${product.price})`;
+    const msg = encodeURIComponent(`Hi! I'm interested in: ${product.name}${price}`);
+    return `https://wa.me/${WA_NUMBER}?text=${msg}`;
+}
+
+function renderProducts(category = 'all') {
+    const grid = document.getElementById('productGrid');
+    const filtered = category === 'all' ? products : products.filter(p => p.category === category);
+
+    grid.innerHTML = filtered.map((p, i) => {
+        const a = cardAccents[p.category];
+        const priceLabel = p.available ? 'On request' : (p.priceFrom ? `From ₹${p.price}` : `₹${p.price}`);
+        return `
+        <div class="product-card bg-white/90 backdrop-blur-sm rounded-3xl ring-1 ring-warmgray/20 overflow-hidden fade-up" style="animation-delay:${i * 0.06}s" data-category="${p.category}">
+            <div class="relative overflow-hidden">
+                <div class="card-img h-36 sm:h-44 md:h-52 bg-gradient-to-br ${a.gradient} flex items-center justify-center">
+                    <span class="text-4xl sm:text-5xl md:text-6xl drop-shadow-sm">${p.icon}</span>
+                </div>
+                <span class="absolute top-3 left-3 ${a.tag} text-[0.6rem] tracking-widest uppercase font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">${p.category}</span>
+                ${p.priceFrom ? '<span class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm text-[0.6rem] tracking-wider uppercase font-semibold px-2.5 py-1 rounded-full text-charcoal/40">From</span>' : ''}
+                ${p.bestseller ? '<span class="absolute bottom-3 left-3 bg-charcoal/90 backdrop-blur-sm text-[0.55rem] tracking-widest uppercase font-bold px-2.5 py-1 rounded-full text-cream/90">Bestseller</span>' : ''}
+            </div>
+            <div class="p-5 pt-4">
+                <h3 class="font-serif text-[1.1rem] font-bold mb-1.5 leading-snug text-charcoal">${p.name}</h3>
+                <p class="text-[0.8rem] text-charcoal/40 mb-5 leading-relaxed">${p.desc}</p>
+                <div class="flex items-end justify-between">
+                    <span class="font-serif text-xl font-bold ${p.available ? 'text-charcoal/40 text-sm' : 'price-tag-dark'}">${priceLabel}</span>
+                    <a href="${waLink(p)}" target="_blank" class="wa-btn px-5 py-2.5 text-white rounded-xl text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Order
+                    </a>
+                </div>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+function filterCategory(cat) {
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.cat === cat);
+    });
+    renderProducts(cat);
+}
+
+// ── MULTI-LANGUAGE WA LABEL ──
+const waLabels = {
+    en: 'Chat with us on WhatsApp',
+    hi: 'WhatsApp पर हमसे चैट करें',
+    ar: 'تحدث معنا على واتساب',
+    ml: 'വാട്ട്‌സ്ആപ്പിൽ ഞങ്ങളുമായി ചാറ്റ് ചെയ്യുക',
+};
+
+function detectLang() {
+    const nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    if (nav.startsWith('hi')) return 'hi';
+    if (nav.startsWith('ar')) return 'ar';
+    if (nav.startsWith('ml')) return 'ml';
+    return 'en';
+}
+
+function setLang(code) {
+    const label = document.getElementById('waLabel');
+    if (label) label.textContent = waLabels[code] || waLabels.en;
+    document.querySelectorAll('.lang-toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === code);
+    });
+}
+
+setLang(detectLang());
+
+renderProducts();
+</script>
+
+</body>
+</html>

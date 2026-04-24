@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — _one.der_crafts_</title>
+    <meta name="description" content="Learn about _one.der_crafts_ — where every creation tells a story. Handcrafted frames, albums, bouquets & more.">
+    <meta property="og:title" content="About Us — _one.der_crafts_">
+    <meta property="og:description" content="Where every creation tells a story. Handcrafted frames, albums, bouquets & more.">
+    <link rel="canonical" href="https://one.der-crafts.com/about">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        cream: '#FFFDF7',
+                        sand: '#F5F0E8',
+                        warmgray: '#E8E4DE',
+                        charcoal: '#2D2D2D',
+                        blush: '#F9E4E4',
+                        sage: '#E8EDE8',
+                        lavender: '#EDE8F5',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #FFFDF7; }
+        .fade-up {
+            animation: fadeUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            opacity: 0;
+        }
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .wa-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            transition: all 0.3s ease;
+        }
+        .wa-btn:hover {
+            background: linear-gradient(135deg, #20BD5A 0%, #0E7A6E 100%);
+            transform: scale(1.03);
+            box-shadow: 0 4px 14px rgba(37,211,102,0.3);
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d4cfc7; border-radius: 3px; }
+    </style>
+</head>
+<body class="text-charcoal antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-cream/70 backdrop-blur-xl z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-18 py-4">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blush via-lavender to-sage flex items-center justify-center font-serif text-lg font-bold text-charcoal group-hover:scale-105 transition-transform">o</div>
+                    <div>
+                        <span class="font-serif text-xl md:text-2xl font-bold tracking-tight block leading-none">_one.der_crafts_</span>
+                        <span class="text-[0.6rem] tracking-[0.25em] uppercase text-charcoal/30 block">Handcrafted with love</span>
+                    </div>
+                </a>
+                <!-- Mobile menu button -->
+                <button onclick="toggleMenu()" class="md:hidden p-2 rounded-xl hover:bg-sand/60 transition-colors">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+                </button>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-charcoal/50">
+                    <a href="index.html" class="hover:text-charcoal/80 transition-colors">Shop</a>
+                    <a href="about.html" class="text-charcoal font-semibold">About</a>
+                    <a href="contact.html" class="hover:text-charcoal/80 transition-colors">Contact</a>
+                    <a href="https://wa.me/919123456789?text=Hi!%20I'm%20interested%20in%20your%20products." target="_blank" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-colors text-xs font-medium text-[#128C7E]">
+                        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile dropdown -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-charcoal/60 hover:bg-sand/30 transition-colors">Shop</a>
+                <a href="about.html" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-charcoal bg-sand/40">About</a>
+                <a href="contact.html" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-charcoal/60 hover:bg-sand/30 transition-colors">Contact</a>
+                <a href="https://wa.me/919123456789?text=Hi!%20I'm%20interested%20in%20your%20products." target="_blank" class="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-[#128C7E] bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-colors">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('hidden')}</script>
+
+    <!-- HERO -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="fade-up" style="animation-delay: 0.1s">
+                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/60 backdrop-blur-sm border border-warmgray/30 text-xs tracking-widest uppercase text-charcoal/50 mb-8">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-300"></span>
+                    Our Story
+                </span>
+            </div>
+            <h1 class="fade-up font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6" style="animation-delay: 0.2s">
+                Where every creation<br>tells a <span class="italic text-charcoal/50">story</span>
+            </h1>
+            <p class="fade-up text-base md:text-lg text-charcoal/40 max-w-xl mx-auto leading-relaxed" style="animation-delay: 0.35s">
+                We believe that the best gifts aren't just things — they're memories, feelings, and moments captured in craft.
+            </p>
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="px-6 pb-20">
+        <div class="max-w-3xl mx-auto space-y-8 text-charcoal/60 leading-relaxed">
+            <div class="fade-up" style="animation-delay: 0.4s">
+                <p class="text-lg">
+                    <strong class="text-charcoal font-semibold">_one.der_crafts_</strong> was born from a simple idea: handcrafted gifts carry a warmth that factory-made products never can. Every frame we build, every album we bind, and every bouquet we arrange is made with personal care and attention to detail.
+                </p>
+            </div>
+            <div class="fade-up" style="animation-delay: 0.5s">
+                <p>
+                    We started small — just a few frames and a passion for creating beautiful things. Today, we offer a wide range of handcrafted products: from elegant photo frames and memory albums to stunning chocolate bouquets and personalized gifts. Each item is a labor of love, designed to make your special moments even more memorable.
+                </p>
+            </div>
+            <div class="fade-up" style="animation-delay: 0.6s">
+                <p>
+                    What sets us apart is our commitment to <strong class="text-charcoal">customization</strong>. We don't just sell products — we create experiences. Whether it's a custom Nikkah Nama, a personalized magazine, or a one-of-a-kind caricature trophy, we work with you to bring your vision to life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE STAND FOR -->
+    <section class="px-6 pb-20">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-serif text-3xl font-bold text-center mb-12">What We Stand For</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl ring-1 ring-warmgray/15 p-8 text-center">
+                    <div class="w-14 h-14 rounded-2xl bg-blush mx-auto mb-4 flex items-center justify-center text-2xl">❤️</div>
+                    <h3 class="font-serif text-lg font-bold mb-2">Made with Love</h3>
+                    <p class="text-sm text-charcoal/40 leading-relaxed">Every product is handcrafted with care, ensuring quality and attention to detail in every piece.</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl ring-1 ring-warmgray/15 p-8 text-center">
+                    <div class="w-14 h-14 rounded-2xl bg-lavender mx-auto mb-4 flex items-center justify-center text-2xl">🎨</div>
+                    <h3 class="font-serif text-lg font-bold mb-2">Fully Customizable</h3>
+                    <p class="text-sm text-charcoal/40 leading-relaxed">From engravings to full custom designs — we bring your unique vision to life.</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-3xl ring-1 ring-warmgray/15 p-8 text-center">
+                    <div class="w-14 h-14 rounded-2xl bg-sage mx-auto mb-4 flex items-center justify-center text-2xl">🤝</div>
+                    <h3 class="font-serif text-lg font-bold mb-2">Personal Touch</h3>
+                    <p class="text-sm text-charcoal/40 leading-relaxed">We work directly with you over WhatsApp to ensure every detail is just right.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-6 pb-20">
+        <div class="max-w-2xl mx-auto text-center bg-gradient-to-br from-blush/50 via-lavender/30 to-sage/50 rounded-3xl p-10 md:p-14">
+            <h2 class="font-serif text-3xl font-bold mb-3">Ready to create something special?</h2>
+            <p class="text-charcoal/40 mb-8">Browse our collection and order via WhatsApp.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="index.html" class="px-8 py-3.5 bg-charcoal text-cream rounded-2xl font-medium hover:bg-charcoal/90 transition-colors text-sm">Browse Collection</a>
+                <a href="https://wa.me/919123456789?text=Hi!%20I'd%20like%20to%20discuss%20a%20custom%20order." target="_blank" class="wa-btn px-8 py-3.5 text-white rounded-2xl font-medium text-sm flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat With Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-warmgray/30 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="font-serif text-2xl font-bold mb-1">_one.der_crafts_</p>
+                    <p class="text-sm text-charcoal/30">Handcrafted with love. All rights reserved.</p>
+                </div>
+                <div class="flex items-center gap-6 text-sm text-charcoal/30">
+                    <a href="index.html" class="hover:text-charcoal/60 transition-colors">Shop</a>
+                    <a href="about.html" class="hover:text-charcoal/60 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-charcoal/60 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
